@@ -20,7 +20,7 @@ import {WebView} from 'react-native-webview';
 const App = () => {
   const sourceUri =
     (Platform.OS === 'android' ? 'file:///android_asset/' : '') +
-    'html/Web.bundle/loader.html';
+    'Web.bundle/loader.html';
   const params = 'platform=' + Platform.OS;
   const injectedJS = `
     if (!window.location.search) {
